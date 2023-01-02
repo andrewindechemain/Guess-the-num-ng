@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/andrewindechemain/Guess-the-num-ng/issues"
   },
-  "homepage": "https://github.com/andrewindechemain/Guess-the-num-ng#readme"
+  "homepage": "https://github.com/andrewindechemain/Guess-the-num-ng#readme",
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.47.1"
+  }
 }
