@@ -2,7 +2,7 @@
   "name": "guess-the-number-angular",
   "version": "1.0.0",
   "description": "Guess the number game built using angular",
-  "main": "index.js",
+  "main": "./src/main.ts",
   "scripts": {
     "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -36,6 +36,7 @@
     "@angular/platform-browser-dynamic": "^15.0.4",
     "@angular/router": "^15.0.4",
     "html-webpack-plugin": "^5.5.0",
+    "raw-loader": "^4.0.2",
     "rxjs": "^7.8.0",
     "zone.js": "^0.12.0"
   }
