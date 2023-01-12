@@ -1,0 +1,14 @@
+name: CI/CD
+version: 1
+
+on:
+  push:
+    branches:
+      working_directory: ~/repo
+  pull-request: 
+    branches: [pre-production]
+jobs:
+    -node/test:
+      version: '16.16.0'
+
+  
