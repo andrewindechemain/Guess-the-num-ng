@@ -8,7 +8,33 @@ on:
   pull-request: 
     branches: [pre-production]
 jobs:
-    -node/test:
-      version: '16.16.0'
+  build:
+    working_directory: ~/GUESS-NUMBER-NG
+    docker:
+      - image: circleci/node:8-browsers
+    version: '16.16.0'
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: npm run install
+      - save_cache:
+          key: 
+          - v1-dependency-cache-{{ checksum "package-lock.json" }}
+          - v1-deps-
+          paths:
+          - node-modules
+      - run:
+          name: linting
+          command: eslint 
+      - run:
+          name: test
+          command: "echo \"Error: no test specified\" && exit 1" 
+          
+          
+
+
+        
+    
 
   
